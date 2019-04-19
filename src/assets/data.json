@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "emp_name": "Leanne Graham",
+      "emp_salary": 42555,
+      "emp_age": 28
+    },
+    {
+      "id": 2,
+      "emp_name": "Clementine Bauch",
+      "emp_salary": 42555,
+      "emp_age": 29
+    },
+    {
+      "id": 5,
+      "emp_name": "Leanne Graham",
+      "emp_salary": 42555,
+      "emp_age": 28
+    },
+    {
+      "emp_name": "dgdf",
+      "emp_salary": "35435",
+      "emp_age": "33",
+      "id": 6
+    },
+    {
+      "emp_name": "sdfgdf",
+      "emp_salary": "546546",
+      "emp_age": "345",
+      "id": 7
+    },
+    {
+      "emp_name": "cgfgh",
+      "emp_salary": "3454",
+      "emp_age": "34",
+      "id": 8
+    }
+  ]
+}

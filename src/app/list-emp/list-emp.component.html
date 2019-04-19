@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 m-auto">
+      <table class="table">
+        <tr class="bg-primary text-white">
+          <th colspan="7" class="text-center">Employees List</th>
+        </tr>
+        <tr class="table-info">
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>DOB</th>
+          <th>Salary</th>
+          <th>Age</th>
+          <th>Action</th>
+        </tr>
+        <tr *ngFor="let emp of employees | paginate: { itemsPerPage: 3, currentPage: p }, let i = index;">
+          <td>{{emp.id}}</td>
+          <td>{{emp.emp_name}}</td>
+          <td>{{emp.emp_email}}</td>
+          <td>{{emp.emp_dob | date}}</td>
+          <td>{{emp.emp_salary}}</td>
+          <td>{{emp.emp_age}}</td>
+          <td>
+            <button (click)="editEmp(emp)" class="btn btn-sm btn-outline-primary mr-2">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+            <button (click)="deleteEmp(emp)" class="btn btn-sm btn-outline-danger">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="7" class="text-center">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
